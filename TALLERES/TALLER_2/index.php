@@ -1,18 +1,28 @@
 <?php
-$name = "Juan";
-$age = 25;
+// Variable definitions
+$name = "Maria";
+$age = 30;
+$city = "Madrid";
 
-// Using echo
-echo "Hello, world!<br>";
-echo "My name is $name<br>";
+// Constant definition
+define("PROFESSION", "Engineer");
 
-// Using print
-print "I am $age years old<br>";
+// Creating a message using different concatenation and print methods
+$message1 = "Hello, my name is " . $name . " and I am " . $age . " years old.";
+$message2 = "I live in $city and I am an " . PROFESSION . ".";
 
-// Using printf (allows formatting)
-printf("My name is %s and I am %d years old<br>", $name, $age);
+echo $message1 . "<br>";
+print($message2 . "<br>");
 
-// Using var_dump (useful for debugging)
+printf("In summary: %s, %d years old, %s, %s<br>", $name, $age, $city, PROFESSION);
+
+echo "<br>Debugging information:<br>";
 var_dump($name);
+echo "<br>";
+var_dump($age);
+echo "<br>";
+var_dump($city);
+echo "<br>";
+var_dump(PROFESSION);
 echo "<br>";
 ?>
