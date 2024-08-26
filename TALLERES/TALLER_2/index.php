@@ -2,19 +2,17 @@
 $name = "Juan";
 $age = 25;
 
-// Concatenation using the . operator
-$introduction1 = "Hi, my name is " . $name . " and I am " . $age . " years old.";
+// Using echo
+echo "Hello, world!<br>";
+echo "My name is $name<br>";
 
-// Concatenation within double quotes
-$introduction2 = "Hi, my name is $name and I am $age years old.";
+// Using print
+print "I am $age years old<br>";
 
-// Definition of a constant
-define("GREETING", "Welcome!");
+// Using printf (allows formatting)
+printf("My name is %s and I am %d years old<br>", $name, $age);
 
-// Concatenation with constant
-$message = GREETING . " " . $name;
-
-echo $introduction1 . "<br>";
-echo $introduction2 . "<br>";
-echo $message . "<br>";
+// Using var_dump (useful for debugging)
+var_dump($name);
+echo "<br>";
 ?>
