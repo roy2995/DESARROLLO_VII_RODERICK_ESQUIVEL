@@ -7,7 +7,7 @@ $phone = "123-456-7890";
 define("OCCUPATION", "Software / Game Developer");
 
 $paragraph1 = "Full Name: " . $full_name . "<br>Age: " . $age . "<br>";
-$paragraph2 = "Email: $email<br>Phone: " . $phone . "<br>";
+$paragraph2 = "email: $email<br>Phone: " . $phone . "<br>";
 $paragraph3 = "Occupation: " . OCCUPATION . "<br>";
 
 echo $paragraph1;
@@ -15,7 +15,7 @@ print($paragraph2);
 printf("Summary: %s, %d years old, %s, %s<br>", $full_name, $age, $email, OCCUPATION);
 
 echo "<br>Debugging information:<br>";
-var_dump($full_name);
+var_dump($full_ame);
 echo "<br>";
 var_dump($age);
 echo "<br>";
