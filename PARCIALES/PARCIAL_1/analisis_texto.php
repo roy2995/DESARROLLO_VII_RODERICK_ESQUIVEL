@@ -11,10 +11,11 @@ echo "<table border='1'>";
 echo "<tr><th>Frase</th><th>Contar Palabras</th><th>Contar Vocales</th><th>Invertir Palabras</th></tr>";
 
 foreach ($frases as $frase) {
-    echo "$frase";
-    echo  contar_palabras($frase);
-    echo  contar_vocales($frase);
-    echo  invertir_palabras($frase);
+    echo "<tr>";
+    echo "<td>$frase</td>";
+    echo "<td>" . contar_palabras($frase) . "</td>";
+    echo "<td>" . contar_vocales($frase) . "</td>";
+    echo "<td>" . invertir_palabras($frase) . "</td>";
     echo "</tr>";
 }
 
