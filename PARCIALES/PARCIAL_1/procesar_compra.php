@@ -14,7 +14,7 @@ $carrito = [
     'pantalon' => 1,
     'zapatos' => 1,
     'calcetines' => 3,
-    'gorra' => 0
+    'gorra' => 30
 ];
 
 $subtotal = 0;
@@ -30,10 +30,10 @@ foreach ($carrito as $producto => $cantidad) {
         $subtotal += $subtotal_producto;
 
         echo "<tr>";
-        echo "<td>$producto</td>";
-        echo "<td>$cantidad</td>";
-        echo "<td>$$precio</td>";
-        echo "<td>$$subtotal_producto</td>";
+        echo $producto;
+        echo $cantidad;
+        echo $precio;
+        echo $subtotal_producto;
         echo "</tr>";
     }
 }
