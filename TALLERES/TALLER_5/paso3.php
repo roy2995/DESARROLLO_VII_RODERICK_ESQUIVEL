@@ -69,14 +69,12 @@ function estudiantesDeHonor($estudiantes) {
     });
 }
 
-// Mostrar estudiantes que necesitan tutoría
 $tutores = estudiantesNecesitanTutoria($estudiantes);
 echo "\nEstudiantes que necesitan tutoría:\n";
 foreach ($tutores as $tutor) {
     echo "{$tutor['nombre']} ({$tutor['promedio']})\n";
 }
 
-// Mostrar estudiantes de honor
 $honores = estudiantesDeHonor($estudiantes);
 echo "\nEstudiantes de honor:\n";
 foreach ($honores as $honor) {

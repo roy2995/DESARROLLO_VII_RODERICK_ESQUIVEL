@@ -70,7 +70,6 @@ function productoMayorValor($inv) {
     return $maxProducto;
 }
 
-// Mostrar el producto con mayor valor total
 $productoMayor = productoMayorValor($inventario);
 echo "\nProducto con mayor valor total: $productoMayor\n";
 
