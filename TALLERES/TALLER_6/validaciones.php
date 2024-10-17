@@ -7,8 +7,15 @@ function validarEmail($email) {
     return filter_var($email, FILTER_VALIDATE_EMAIL);
 }
 
-function validarEdad($edad) {
-    return is_numeric($edad) && $edad >= 18 && $edad <= 120;
+function validarFechaNacimiento($fechaNacimiento) {
+    $fechaNacimientoObj = DateTime::createFromFormat('Y-m-d', $fechaNacimiento);
+    
+    if (!$fechaNacimientoObj || $fechaNacimientoObj->format('Y-m-d') !== $fechaNacimiento) {
+        return false;
+    }
+    
+    $hoy = new DateTime();
+    return $fechaNacimientoObj <= $hoy;
 }
 
 function validarSitioWeb($sitioWeb) {
